@@ -1,3 +1,5 @@
+
+
 function fetchDataAndDisplay(){
     fetch('https://api.thingspeak.com/channels/2444043/fields/1.json?api_key=NKIHDO428VD1WBQC&results=2')
     .then(response => response.json())
@@ -6,6 +8,11 @@ function fetchDataAndDisplay(){
         const latestField1 = latestFeed.field1;
         const dataOnUi = `<h1>Data: ${latestField1}</h1>`;
         // console.log(latestField1);
+
+        if (latestField1 > 50) {
+            const audio = document.getElementById('audio');
+            audio.play();
+        }
 
         const dataDiv = document.querySelector('.data');
         dataDiv.innerHTML = dataOnUi;

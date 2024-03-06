@@ -1,0 +1,28 @@
+.main{
+    width: 100vw;
+    height:100vh;
+    background: linear-gradient(319.6deg, rgb(243, 0, 79) 20.5%, rgb(255, 236, 68) 110.9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle{
+    width: 15em;
+    height: 25rem;
+    border: 2px solid white;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data{
+    /* width: 80px;
+    height: 30px;
+    background-color: aliceblue; */
+    color: black;
+    border-radius: 20%;
+    text-align: center;
+}
